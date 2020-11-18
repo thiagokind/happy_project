@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+    /* Tamanho 10px equivale a 62.5%
+    Tamanho 16px equivale a 100.0% 
+    Melhor sempre informar tamanho da fonte como acima, pois mudando o dispositivo, o tamanho das fontes acompanhará*/
+}
+
+body{
+    height: 100vh;
+    color: white;
+    background: #EBF2F5;
+}
+
+body, input, button, textarea {
+    font: 400 1.8rem/1 'Nunito', sans-serif;
+    /* a linha acima contém todas regras das linhas comentadas abaixo (método css shorthand)
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1;
+    font-family: 'Nunito', sans-serif; 
+    
+    // 16px é o tamanho padrão de fontes do navegador
+    // 16px = 1em -> em é medida que busca proporção em relação ao elemento pai
+    // rem é medida que buscar proporção em relação ao elemento raiz(root), no caso sempre será o HTML
+    */
+}
+
+#logo{
+    animation-delay: 50ms;
+}
+
+#location{
+    animation-delay: 100ms;
+}
+
+main h1{
+    animation-delay: 150ms;
+    font-size: clamp(4rem, 5vw, 8.4rem); /* Tamanho mínimo, desejado e máximo */
+}
+
+.visit p{
+    animation-delay: 200ms;
+}
+
+.visit a{
+    animation-delay: 250ms;
+}

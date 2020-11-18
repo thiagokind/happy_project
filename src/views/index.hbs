@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="icon" href="/images/logo-icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/page-landing.css">
+    <link rel="stylesheet" href="/css/animations.css">
+  </head>
+  <body onload="getLocation()">
+    <div id="page-landing">
+      <div id="container">
+        <header>
+          <img src="/images/logo.svg" alt="Logotipo da Happy" id="logo" class="animate-up"/>
+          <div class="location animate-up">
+            <strong id="city">{{objeto.city}}</strong>
+            <p id="uf">Estado</p>
+          </div>
+        </header>
+        <main>
+          <h1 class="animate-up">Leve felicidade para o mundo</h1>
+          <section class="visit">
+            <p class="animate-up">Visite orfanatos e mude o dia de muitas crianças</p>
+            <a href="/orphanages" title="Viste orfanatos" class="animate-up">
+              <img src="/images/arrow.svg" alt="Ir para o mapa" />
+            </a>
+          </section>
+        </main>
+      </div>
+    </div>
+
+    <script src="/scripts/geolocation.js"></script>
+
+  </body>
+</html>
